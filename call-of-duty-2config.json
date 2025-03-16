@@ -125,7 +125,7 @@
         "InputType": "checkbox",
         "IsFlagArgument": false,
         "ParamFieldName": "dedicated",
-        "IncludeInCommandLine": false,
+        "IncludeInCommandLine": true,
         "DefaultValue": "2",
         "EnumValues": {
             "False": "1",
