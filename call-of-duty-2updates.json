@@ -17,11 +17,19 @@
         "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Factorio Extract",
+        "UpdateStageName": "dbg",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"tar -xvf cod2-lnxded-1.3-full.tar.xz && rm -f cod2-lnxded-1.3-full.tar.xz\"",
+        "UpdateSourceArgs": "-c \"pwd\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Gamefiles Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd serverfiles && tar -xvf cod2-lnxded-1.3-full.tar.xz && rm -f cod2-lnxded-1.3-full.tar.xz\"",
         "SkipOnFailure": false
     },
     {
@@ -50,7 +58,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd lib && tar -xvf gcc3-libs.tar.bz2 && rm -f gcc3-libs.tar.bz2\"",
+        "UpdateSourceArgs": "-c \"cd serverfiles/lib && tar -xvf gcc3-libs.tar.bz2 && rm -f gcc3-libs.tar.bz2\"",
         "SkipOnFailure": false
     }
 ]
