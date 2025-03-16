@@ -431,8 +431,8 @@
     },
     {
         "DisplayName": "Map Rotation List",
-        "Category": "COD4 Modern Warfare:stadia_controller",
-        "Subcategory": "Server:dns:1",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Default:dns:1",
         "Description": "Sets the map list to use for map rotations for the server. Each entry must be in the format: gametype <gametype> map <mapname> (for example, gametype war map mp_convoy). Map Rotation must be configured",
         "Keywords": "map,rotation,list",
         "FieldName": "sv_mapRotation",
@@ -446,8 +446,8 @@
     },
     {
         "DisplayName": "Map Mode",
-        "Category": "COD4 Modern Warfare:stadia_controller",
-        "Subcategory": "Server:dns:1",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Default:dns:1",
         "Description": "Sets whether to enable map rotation (the Map Rotation List must then also be set) or to load a specific initial map (the Initial Game Type and Initial Map must then also be set)",
         "Keywords": "map,mode",
         "FieldName": "map_rotate",
@@ -464,6 +464,7 @@
     {
         "DisplayName": "Default Gamemode",
         "Category": "COD2:stadia_controller",
+        "Subcategory": "Default:dns:1",
         "Description": "Sets the game type to start the server with. This setting will be overridden if Map Rotation is configured.",
         "Keywords": "default,gamemode",
         "FieldName": "g_gametype",
@@ -486,6 +487,7 @@
     {
         "DisplayName": "Friendly Fire",
         "Category": "COD2:stadia_controller",
+        "Subcategory": "Default:dns:1",
         "Description": "Set the friendly fire type",
         "Keywords": "friendly,fire",
         "FieldName": "scr_friendlyfire",
@@ -507,6 +509,7 @@
     {
         "DisplayName": "Automatic Team balancing",
         "Category": "COD2:stadia_controller",
+        "Subcategory": "Default:dns:1",
         "Description": "Automatically balance teams",
         "Keywords": "automatic,team,balancing",
         "FieldName": "scr_teambalance",
