@@ -52,5 +52,14 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Config File Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/MitoG/AMPTemplates/dev/call-of-duty2server.cfg",
+        "UpdateSourceArgs": "server.cfg",
+        "UpdateSourceTarget": "{{$FullBaseDir}}main",
+        "OverwriteExistingFiles": false
     }
 ]

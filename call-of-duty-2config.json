@@ -407,6 +407,24 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Maximum Bandwidth",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the maximum bandwidth for the server",
+        "Keywords": "maximum,bandwidth",
+        "FieldName": "sv_maxRate",
+        "InputType": "number",
+        "MinValue": "0",
+        "MaxValue": "100000",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_maxRate",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "25000",
+        "Placeholder": "0 - 100000",
+        "Suffix": "bytes/second",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Server Password",
         "Category": "COD2:stadia_controller",
         "Subcategory": "Security:security:1",

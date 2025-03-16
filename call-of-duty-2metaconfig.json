@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "ConfigFile": "main/server.cfg",
+        "AutoMap": true,
+        "ConfigType": "kvp",
+        "ConfigFormat": "set {0} \"{1}\"",
+        "ConfigFormatRegex": "^set (?<key>.+?) \"?(?<value>.*?)\"?$"
+    },
+    {
+        "ConfigFile": "main/server.cfg",
+        "AutoMap": true,
+        "ConfigType": "kvp",
+        "ConfigFormat": "sets {0} \"{1}\"",
+        "ConfigFormatRegex": "^sets (?<key>.+?) \"?(?<value>.*?)\"?$"
+    },
+    {
+        "ConfigFile": "main/server.cfg",
+        "AutoMap": true,
+        "ConfigType": "kvp",
+        "ConfigFormat": "seta {0} \"{1}\"",
+        "ConfigFormatRegex": "^seta (?<key>.+?) \"?(?<value>.*?)\"?$"
+    }
+]
