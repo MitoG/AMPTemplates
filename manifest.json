@@ -1,9 +1,9 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
+	"id": "ab1d156c-02c8-4ed4-91f2-860f3099ea17",
+	"authors": ["MitoG"],
+	"origin": "https://github.com/MitoG/AMPTemplates.git",
+	"url": "https://github.com/MitoG/AMPTemplates",
 	"imagefile": "",
-	"prefix": "",
+	"prefix": "MitoG",
 	"repotype": "AppTemplates"
 }
