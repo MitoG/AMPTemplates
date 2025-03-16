@@ -1,5 +1,17 @@
 [
     {
+        "UpdateStageName": "Create serverfiles Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}serverfiles"
+    },
+    {
+        "UpdateStageName": "Create lib Directory",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}lib"
+    },
+    {
         "UpdateStageName": "Download Gamefiles",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
