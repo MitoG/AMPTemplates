@@ -1,184 +1,81 @@
 [
     {
-        "DisplayName": "Default Map",
-        "Category": "Game Settings",
-        "Description": "Sets the default (starting) map",
-        "Keywords": "default,map",
-        "FieldName": "map",
-        "InputType": "enum",
-        "IsFlagArgument": false,
-        "ParamFieldName": "map",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "mp_leningrad",
-        "Placeholder": "mp_leningrad",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "mp_leningrad": "Leningrad, Russia",
-            "mp_breakout": "Villers-Bocage, France",
-            "mp_brecourt": "Brecourt, France",
-            "mp_burgundy": "Burgundy, France",
-            "mp_carentan": "Carentan, France",
-            "mp_dawnville": "St. Mere Eglise, France",
-            "mp_downtown": "Moscow, Russia",
-            "mp_farmhouse": "Beltot, France",
-            "mp_harbor": "Rostov, Russia",
-            "mp_matmata": "Matmata, Tunisia",
-            "mp_railyard": "Stalingrad, Russia",
-            "mp_rhine": "Wallender, Germany",
-            "mp_toujane": "Toujane, Tunisia",
-            "mp_trainstation": "Caen, France"
-        }
-    },
-    {
-        "DisplayName": "Default Gamemode",
-        "Category": "Game Settings",
-        "Description": "Sets the default (starting) game mode",
-        "Keywords": "default,gamemode",
-        "FieldName": "g_gametype",
-        "InputType": "enum",
-        "IsFlagArgument": false,
-        "ParamFieldName": "g_gametype",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "dm",
-        "Placeholder": "dm",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "dm": "Deathmatch",
-            "tdm": "Team-Deathmatch",
-            "sd": "Search & Destroy",
-            "ctf": "Capture the Flag",
-            "hq": "Headquarter"
-        }
-    },
-    {
-        "DisplayName": "Friendly Fire",
-        "Category": "Game Settings",
-        "Description": "Set the friendly fire type",
-        "Keywords": "friendly,fire",
-        "FieldName": "scr_friendlyfire",
-        "InputType": "enum",
-        "IsFlagArgument": false,
-        "ParamFieldName": "scr_friendlyfire",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "0",
-        "Placeholder": "0",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "0": "On",
-            "1": "Off",
-            "2": "Reflected",
-            "3": "Shared"
-        }
-    },
-    {
-        "DisplayName": "Enable Killcam",
-        "Category": "Game Settings",
-        "Description": "Enable the killcam",
-        "Keywords": "enable,killcam",
-        "FieldName": "scr_killcam",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "scr_killcam",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "0",
-        "Placeholder": "0",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "0": "False",
-            "1": "True"
-        }
-    },
-    {
-        "DisplayName": "PK3 Check",
-        "Category": "Game Settings",
-        "Description": "Prohibits modified clients from joining",
-        "Keywords": "pk3,check",
-        "FieldName": "sv_pure",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "sv_pure",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "1",
-        "Placeholder": "1",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "0": "False",
-            "1": "True"
-        }
-    },
-    {
-        "DisplayName": "Automatic Team balancing",
-        "Category": "Game Settings",
-        "Description": "Automatically balance teams",
-        "Keywords": "automatic,team,balancing",
-        "FieldName": "scr_teambalance",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "scr_teambalance",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "1",
-        "Placeholder": "1",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "0": "False",
-            "1": "True"
-        }
-    },
-    {
-        "DisplayName": "Allow Cheats",
-        "Category": "Game Settings",
-        "Description": "Allow the use of cheats through the console",
-        "Keywords": "allow,cheats",
-        "FieldName": "sv_cheats",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "sv_cheats",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "0",
-        "Placeholder": "0",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "0": "False",
-            "1": "True"
-        }
-    },
-    {
-        "DisplayName": "Enable flood protection",
-        "Category": "Server Settings",
+        "DisplayName": "Game Port",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "",
-        "Keywords": "enable,flood,protection",
-        "FieldName": "sv_floodprotect",
-        "InputType": "checkbox",
+        "Keywords": "",
+        "FieldName": "$GamePort",
+        "InputType": "number",
+        "Hidden": true,
         "IsFlagArgument": false,
-        "ParamFieldName": "sv_floodprotect",
+        "ParamFieldName": "net_port",
         "IncludeInCommandLine": true,
-        "DefaultValue": "0",
-        "Placeholder": "0",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
-        "EnumValues": {
-            "0": "False",
-            "1": "True"
-        }
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "IP Binding",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "$ApplicationIPBinding",
+        "InputType": "number",
+        "Hidden": true,
+        "IsFlagArgument": false,
+        "ParamFieldName": "net_ip",
+        "IncludeInCommandLine": true,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Log File",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "logfile",
+        "InputType": "number",
+        "Hidden": true,
+        "IsFlagArgument": false,
+        "ParamFieldName": "logfile",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Continuous Log",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "g_logsync",
+        "InputType": "number",
+        "Hidden": true,
+        "IsFlagArgument": false,
+        "ParamFieldName": "g_logsync",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "2",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Log File Name",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "g_log",
+        "InputType": "text",
+        "Hidden": true,
+        "IsFlagArgument": false,
+        "ParamFieldName": "g_log",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "games_mp.log",
+        "EnumValues": {}
     },
     {
         "DisplayName": "Dead Chat",
-        "Category": "Game Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "Allow dead players to use the chat",
         "Keywords": "dead,chat",
         "FieldName": "g_deadChat",
@@ -188,17 +85,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Disable Client console",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "Disables the use of the console for clients (prohibits the use of RCON ingame if checked)",
         "Keywords": "disable,client,console",
         "FieldName": "sv_disableClientConsole",
@@ -208,17 +105,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "0",
         "Placeholder": "0",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable voting",
-        "Category": "Game Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "Enable ingame voting",
         "Keywords": "enable,voting",
         "FieldName": "g_allowvote",
@@ -228,17 +125,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable free spectate",
-        "Category": "Game Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "enable,free,spectate",
         "FieldName": "scr_spectatefree",
@@ -248,17 +145,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Allow spectating the enemy",
-        "Category": "Game Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "allow,spectating,the,enemy",
         "FieldName": "scr_spectateenemy",
@@ -268,17 +165,37 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "0",
         "Placeholder": "0",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Enable Killcam",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Enable the killcam",
+        "Keywords": "enable,killcam",
+        "FieldName": "scr_killcam",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "scr_killcam",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "0",
+        "Placeholder": "0",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable ingame voice chat",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "Enables the ingame voice chat",
         "Keywords": "enable,ingame,voice,chat",
         "FieldName": "sv_voice",
@@ -288,17 +205,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "0",
         "Placeholder": "0",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Voice chat quality",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "Set the quality of the ingame voice chat",
         "Keywords": "voice,chat,quality",
         "FieldName": "sv_voiceQuality",
@@ -308,7 +225,6 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "2",
         "Placeholder": "2",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
@@ -325,7 +241,8 @@
     },
     {
         "DisplayName": "Allow map download",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "Allows clients to download maps if they do not have the map installed",
         "Keywords": "allow,map,download",
         "FieldName": "sv_allowDownload",
@@ -335,17 +252,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Map download reconnect limit",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "map,download,reconnect,limit",
         "FieldName": "sv_reconnectlimit",
@@ -355,14 +272,14 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "3",
         "Placeholder": "3",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {}
     },
     {
         "DisplayName": "Map download max rate",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "map,download,max,rate",
         "FieldName": "sv_dl_maxRate",
@@ -379,7 +296,8 @@
     },
     {
         "DisplayName": "Server FPS",
-        "Category": "Server Settings",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "server,fps",
         "FieldName": "sv_fps",
@@ -395,8 +313,220 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Server Password",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Security:security:1",
+        "Description": "Sets the password to join the server",
+        "Keywords": "password",
+        "FieldName": "g_password",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "g_password",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "RCON Password",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Security:security:1",
+        "Description": "Sets the RCON password to allow sending console commands in-game. Default is no password, disabling console commands",
+        "Keywords": "rcon,password",
+        "FieldName": "rcon_password",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "rcon_password",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "PK3 Check",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Security:security:1",
+        "Description": "Prohibits modified clients from joining",
+        "Keywords": "pk3,check",
+        "FieldName": "sv_pure",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_pure",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1",
+        "Placeholder": "1",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Allow Cheats",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Security:security:1",
+        "Description": "Allow the use of cheats through the console",
+        "Keywords": "allow,cheats",
+        "FieldName": "sv_cheats",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_cheats",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "0",
+        "Placeholder": "0",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Enable Flood Protection",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Security:security:1",
+        "Description": "If enabled, flood protection applies, so user commands are throttled. Should be enabled on non-password-protected public servers",
+        "Keywords": "flood,protection",
+        "FieldName": "sv_floodprotect",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_floodprotect",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Default Map",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Default:dns:1",
+        "Description": "Sets the map to start the server with. This setting will be the initial map if Map Rotation is configured",
+        "Keywords": "default,map",
+        "FieldName": "map",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "map",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "mp_leningrad",
+        "Placeholder": "mp_leningrad",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "mp_leningrad": "Leningrad, Russia (mp_leningrad)",
+            "mp_breakout": "Villers-Bocage, France (mp_breakout)",
+            "mp_brecourt": "Brecourt, France (mp_brecourt)",
+            "mp_burgundy": "Burgundy, France (mp_burgundy)",
+            "mp_carentan": "Carentan, France (mp_carentan)",
+            "mp_dawnville": "St. Mere Eglise, France (mp_dawnville)",
+            "mp_downtown": "Moscow, Russia (mp_downtown)",
+            "mp_farmhouse": "Beltot, France (mp_farmhouse)",
+            "mp_harbor": "Rostov, Russia (mp_harbor)",
+            "mp_matmata": "Matmata, Tunisia (mp_matmata)",
+            "mp_railyard": "Stalingrad, Russia (mp_railyard)",
+            "mp_rhine": "Wallender, Germany (mp_rhine)",
+            "mp_toujane": "Toujane, Tunisia (mp_toujane)",
+            "mp_trainstation": "Caen, France (mp_trainstation)"
+        }
+    },
+    {
+        "DisplayName": "Map Rotation List",
+        "Category": "COD4 Modern Warfare:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the map list to use for map rotations for the server. Each entry must be in the format: gametype <gametype> map <mapname> (for example, gametype war map mp_convoy). Map Rotation must be configured",
+        "Keywords": "map,rotation,list",
+        "FieldName": "sv_mapRotation",
+        "InputType": "Textarea",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_mapRotation",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "gametype dm map mp_breakout gametype dm map mp_brecourt gametype dm map mp_burgundy gametype dm map mp_carentan gametype dm map mp_dawnville gametype dm map mp_decoy gametype dm map mp_downtown gametype dm map mp_farmhouse gametype dm map mp_leningrad gametype dm map mp_matmata gametype dm map mp_railyard gametype dm map mp_toujane gametype dm map mp_trainstation gametype dm map mp_rhine gametype dm map mp_harbor gametype sd map mp_breakout gametypesd map mp_brecourt gametype sd map mp_burgundy gametype sd map mp_carentan gametype sd map mp_dawnville gametype sd map mp_decoy gametype sd map mp_downtown gametype sd map mp_farmhouse gametype sd map mp_leningrad gametype sd map mp_matmata gametype sd map mp_railyard gametype sd map mp_toujane gametype sd map mp_trainstation gametype sd map mp_rhine gametype sd map mp_harbor gametype ctf map mp_breakout gametype ctf map mp_brecourt gametype ctf map mp_burgundy gametype ctf map mp_carentan gametype ctf map mp_dawnville gametype ctf map mp_decoy gametype ctf map mp_downtown gametype ctf map mp_farmhouse gametype ctf map mp_leningrad gametype ctf map mp_matmata gametype ctf map mp_railyard gametype ctf map mp_toujane gametype ctf map mp_trainstation gametype ctf map mp_rhine gametype ctf map mp_harbor gametype tdm map mp_breakout gametype tdm map mp_brecourt gametype tdm map mp_burgundy gametype tdm map mp_carentan gametype tdm map mp_dawnville gametype tdm map mp_decoy gametype tdm map mp_downtown gametype tdm map mp_farmhouse gametype tdm map mp_leningrad gametype tdm map mp_matmata gametype tdm map mp_railyard gametype tdm map mp_toujane gametype tdm map mp_trainstation gametype tdm map mp_rhine gametype tdm map mp_harbor gametype hq map mp_breakout gametype hq map mp_brecourt gametype hq map mp_burgundy gametype hq map mp_carentan gametype hq map mp_dawnville gametype hq map mp_decoy gametype hq map mp_downtown gametype hq map mp_farmhouse gametype hq map mp_leningrad gametype hq map mp_matmata gametype hq map mp_railyard gametype hq map mp_toujane gametype hq map mp_trainstation gametype hq map mp_rhine gametype hq map mp_harbor",
+        "Placeholder": "gametype dm map mp_breakout gametype dm map mp_brecourt gametype dm map mp_burgundy gametype dm map mp_carentan gametype dm map mp_dawnville gametype dm map mp_decoy gametype dm map mp_downtown gametype dm map mp_farmhouse gametype dm map mp_leningrad gametype dm map mp_matmata gametype dm map mp_railyard gametype dm map mp_toujane gametype dm map mp_trainstation gametype dm map mp_rhine gametype dm map mp_harbor gametype sd map mp_breakout gametypesd map mp_brecourt gametype sd map mp_burgundy gametype sd map mp_carentan gametype sd map mp_dawnville gametype sd map mp_decoy gametype sd map mp_downtown gametype sd map mp_farmhouse gametype sd map mp_leningrad gametype sd map mp_matmata gametype sd map mp_railyard gametype sd map mp_toujane gametype sd map mp_trainstation gametype sd map mp_rhine gametype sd map mp_harbor gametype ctf map mp_breakout gametype ctf map mp_brecourt gametype ctf map mp_burgundy gametype ctf map mp_carentan gametype ctf map mp_dawnville gametype ctf map mp_decoy gametype ctf map mp_downtown gametype ctf map mp_farmhouse gametype ctf map mp_leningrad gametype ctf map mp_matmata gametype ctf map mp_railyard gametype ctf map mp_toujane gametype ctf map mp_trainstation gametype ctf map mp_rhine gametype ctf map mp_harbor gametype tdm map mp_breakout gametype tdm map mp_brecourt gametype tdm map mp_burgundy gametype tdm map mp_carentan gametype tdm map mp_dawnville gametype tdm map mp_decoy gametype tdm map mp_downtown gametype tdm map mp_farmhouse gametype tdm map mp_leningrad gametype tdm map mp_matmata gametype tdm map mp_railyard gametype tdm map mp_toujane gametype tdm map mp_trainstation gametype tdm map mp_rhine gametype tdm map mp_harbor gametype hq map mp_breakout gametype hq map mp_brecourt gametype hq map mp_burgundy gametype hq map mp_carentan gametype hq map mp_dawnville gametype hq map mp_decoy gametype hq map mp_downtown gametype hq map mp_farmhouse gametype hq map mp_leningrad gametype hq map mp_matmata gametype hq map mp_railyard gametype hq map mp_toujane gametype hq map mp_trainstation gametype hq map mp_rhine gametype hq map mp_harbor",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Map Mode",
+        "Category": "COD4 Modern Warfare:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets whether to enable map rotation (the Map Rotation List must then also be set) or to load a specific initial map (the Initial Game Type and Initial Map must then also be set)",
+        "Keywords": "map,mode",
+        "FieldName": "map_rotate",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "map_rotate",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "",
+        "EnumValues": {
+            "sv_mapRotation \"{{sv_mapRotation}}\" +set sv_mapRotationCurrentmap \"{{map}}\" +set g_gametype \"{{g_gametype}}\" +map_rotate ": "Map Rotation (Default)",
+            "g_gametype \"{{g_gametype}}\" +map \"{{map}}\" ": "Specific Initial Map"
+        }
+    },
+    {
+        "DisplayName": "Default Gamemode",
+        "Category": "COD2:stadia_controller",
+        "Description": "Sets the game type to start the server with. This setting will be overridden if Map Rotation is configured.",
+        "Keywords": "default,gamemode",
+        "FieldName": "g_gametype",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "g_gametype",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "dm",
+        "Placeholder": "dm",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "dm": "Deathmatch",
+            "tdm": "Team-Deathmatch",
+            "sd": "Search & Destroy",
+            "ctf": "Capture the Flag",
+            "hq": "Headquarter"
+        }
+    },
+    {
+        "DisplayName": "Friendly Fire",
+        "Category": "COD2:stadia_controller",
+        "Description": "Set the friendly fire type",
+        "Keywords": "friendly,fire",
+        "FieldName": "scr_friendlyfire",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "scr_friendlyfire",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "0",
+        "Placeholder": "0",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "0": "On",
+            "1": "Off",
+            "2": "Reflected",
+            "3": "Shared"
+        }
+    },
+    {
+        "DisplayName": "Automatic Team balancing",
+        "Category": "COD2:stadia_controller",
+        "Description": "Automatically balance teams",
+        "Keywords": "automatic,team,balancing",
+        "FieldName": "scr_teambalance",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "scr_teambalance",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1",
+        "Placeholder": "1",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
         "DisplayName": "Enable Springfield Sniper",
-        "Category": "Weapon Settings (Sniper)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,springfield,sniper",
         "FieldName": "scr_allow_springfield",
@@ -406,17 +536,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable SVT-40",
-        "Category": "Weapon Settings (Sniper)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,svt-40",
         "FieldName": "scr_allow_svt40",
@@ -426,17 +556,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Kar98 Sniper",
-        "Category": "Weapon Settings (Sniper)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,kar98,sniper",
         "FieldName": "scr_allow_kar98ksniper",
@@ -446,17 +576,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Nagant Sniper",
-        "Category": "Weapon Settings (Sniper)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,nagant,sniper",
         "FieldName": "scr_allow_nagantsniper",
@@ -466,17 +596,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Enfield Sniper",
-        "Category": "Weapon Settings (Sniper)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,enfield,sniper",
         "FieldName": "scr_allow_enfieldsniper",
@@ -486,17 +616,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Enfield",
-        "Category": "Weapon Settings (Rifle)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,enfield",
         "FieldName": "scr_allow_enfield",
@@ -506,17 +636,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Kar98k",
-        "Category": "Weapon Settings (Rifle)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,kar98k",
         "FieldName": "scr_allow_kar98k",
@@ -526,17 +656,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable M1 Carbine",
-        "Category": "Weapon Settings (Rifle)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,m1,carbine",
         "FieldName": "scr_allow_m1carbine",
@@ -546,17 +676,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable M1 Garand",
-        "Category": "Weapon Settings (Rifle)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,m1,garand",
         "FieldName": "scr_allow_m1garand",
@@ -566,17 +696,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable G43",
-        "Category": "Weapon Settings (Rifle)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,g43",
         "FieldName": "scr_allow_g43",
@@ -586,17 +716,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Nagant",
-        "Category": "Weapon Settings (Rifle)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,nagant",
         "FieldName": "scr_allow_nagant",
@@ -606,17 +736,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable BAR",
-        "Category": "Weapon Settings (HMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,bar",
         "FieldName": "scr_allow_bar",
@@ -626,17 +756,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Bren",
-        "Category": "Weapon Settings (HMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,bren",
         "FieldName": "scr_allow_bren",
@@ -646,17 +776,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable MP-44",
-        "Category": "Weapon Settings (HMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,mp-44",
         "FieldName": "scr_allow_mp44",
@@ -666,17 +796,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable PPSh",
-        "Category": "Weapon Settings (HMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,ppsh",
         "FieldName": "scr_allow_ppsh",
@@ -686,17 +816,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable MP-40",
-        "Category": "Weapon Settings (LMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,mp-40",
         "FieldName": "scr_allow_mp40",
@@ -706,17 +836,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Sten",
-        "Category": "Weapon Settings (LMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,sten",
         "FieldName": "scr_allow_sten",
@@ -726,17 +856,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Thompson",
-        "Category": "Weapon Settings (LMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,thompson",
         "FieldName": "scr_allow_thompson",
@@ -746,17 +876,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable PPS-42",
-        "Category": "Weapon Settings (LMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,pps-42",
         "FieldName": "scr_allow_pps42",
@@ -766,17 +896,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Grease Gun",
-        "Category": "Weapon Settings (LMG)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,grease,gun",
         "FieldName": "scr_allow_greasegun",
@@ -786,17 +916,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Shotgun",
-        "Category": "Weapon Settings (Shotgun)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,shotgun",
         "FieldName": "scr_allow_shotgun",
@@ -806,17 +936,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Smoke Grenades",
-        "Category": "Weapon Settings (Grenades)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,smoke,grenades",
         "FieldName": "scr_allow_smokegrenades",
@@ -826,17 +956,17 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     },
     {
         "DisplayName": "Enable Frag Grenades",
-        "Category": "Weapon Settings (Grenades)",
+        "Category": "COD2:stadia_controller",
+        "Subcategory": "Weapons:dns:1",
         "Description": "",
         "Keywords": "enable,frag,grenades",
         "FieldName": "scr_allow_fraggrenades",
@@ -846,12 +976,11 @@
         "IncludeInCommandLine": true,
         "DefaultValue": "1",
         "Placeholder": "1",
-        "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
         "EnumValues": {
-            "0": "False",
-            "1": "True"
+            "False": "0",
+            "True": "1"
         }
     }
 ]

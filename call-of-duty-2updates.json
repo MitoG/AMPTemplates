@@ -4,21 +4,19 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "http://linuxgsm.download/CallOfDuty2/cod2-lnxded-1.3-full.tar.xz",
-        "UnzipUpdateSource": false,
+        "UpdateSourceArgs": "cod2-lnxded-1.3-full.tar.xz",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": false,
-        "OneShot": true
+        "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Extracting Gamefiles",
+        "UpdateStageName": "Factorio Extract",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "cod2-lnxded-1.3-full.tar.xz",
-        "UpdateSourceTarget": "./serverfiles/",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": true
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd serverfiles && tar -xJf cod2-lnxded-1.3-full.tar.xz --strip-components=1 >/dev/null 2>&1 && rm -f cod2-lnxded-1.3-full.tar.xz\"",
+        "SkipOnFailure": false
     },
     {
         "UpdateStageName": "Make game executable",
@@ -35,21 +33,18 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "http://icculus.org/updates/cod/gcc3-libs.tar.bz2",
-        "UpdateSourceTarget": "downloads",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": true
+        "UpdateSourceArgs": "gcc3-libs.tar.bz2",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Extracting gcc3-libs",
+        "UpdateStageName": "Factorio Extract",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "./downloads/gcc3-libs.tar.bz2",
-        "UpdateSourceTarget": "./lib/",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": true
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd lib && tar -xJf gcc3-libs.tar.bz2 --strip-components=1 >/dev/null 2>&1 && rm -f gcc3-libs.tar.bz2\"",
+        "SkipOnFailure": false
     }
 ]
