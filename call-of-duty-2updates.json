@@ -58,7 +58,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/MitoG/AMPTemplates/dev/call-of-duty2server.cfg",
-        "UpdateSourceArgs": "server.cfg",
+        "UpdateSourceArgs": "config_mp_server.cfg",
         "UpdateSourceTarget": "{{$FullBaseDir}}main",
         "OverwriteExistingFiles": false
     }
