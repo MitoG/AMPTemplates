@@ -1,11 +1,5 @@
 [
     {
-        "UpdateStageName": "Create serverfiles Directory",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "{{$FullBaseDir}}serverfiles"
-    },
-    {
         "UpdateStageName": "Create lib Directory",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CreateDirectory",
@@ -27,7 +21,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd serverfiles && tar -xJf cod2-lnxded-1.3-full.tar.xz --strip-components=1 >/dev/null 2>&1 && rm -f cod2-lnxded-1.3-full.tar.xz\"",
+        "UpdateSourceArgs": "-c \"tar -xJf cod2-lnxded-1.3-full.tar.xz --strip-components=1 >/dev/null 2>&1 && rm -f cod2-lnxded-1.3-full.tar.xz\"",
         "SkipOnFailure": false
     },
     {
@@ -46,7 +40,7 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "http://icculus.org/updates/cod/gcc3-libs.tar.bz2",
         "UpdateSourceArgs": "gcc3-libs.tar.bz2",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}lib",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
