@@ -52,13 +52,5 @@
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Factorio Extract",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd cod2server/serverfiles/lib && tar -xvf gcc3-libs.tar.bz2 && rm -f gcc3-libs.tar.bz2\"",
-        "SkipOnFailure": false
     }
 ]
