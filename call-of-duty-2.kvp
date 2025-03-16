@@ -1,5 +1,5 @@
 App.AdminLoginTransform=None
-App.AdminMethod=QuakeRCON
+App.AdminMethod=STDIO
 App.AdminPortRef=RemoteAdminPort
 App.ApplicationIPBinding=0.0.0.0
 App.ApplicationReadyMode=RCONConnected
@@ -14,7 +14,7 @@ App.ExecutableLinux=serverfiles/cod2_lnxded
 App.ExecutableWin=serverfiles\
 App.ExitFile=app_exit.lck
 App.ExitMethod=OS_CLOSE
-App.ExitString=stop
+App.ExitString=quit
 App.ExitTimeout=30
 App.HasReadableConsole=true
 App.HasWritableConsole=true
